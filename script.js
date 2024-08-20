@@ -282,7 +282,6 @@ function validateInput(input) {
 }
 
 function validateInputs() {
-  const errors = document.querySelectorAll(".error");
   const form = document.querySelector(".my_form");
   const formData = new FormData(form);
   const inputs = form.querySelectorAll("input, select, textarea");
