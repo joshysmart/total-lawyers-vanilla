@@ -33,15 +33,6 @@ ratingsContainersDom.forEach((ratingContainer) => {
   ratingContainer.innerHTML = createRatingStars(RATING).join("");
 });
 
-function createElement(tag, attributes = {}, textContent = "") {
-  const el = document.createElement(tag);
-  Object.entries(attributes).forEach(([key, value]) =>
-    el.setAttribute(key, value)
-  );
-  el.textContent = textContent;
-  return el;
-}
-
 function createButtonElement() {
   const button = document.createElement("button");
   button.type = "button";
